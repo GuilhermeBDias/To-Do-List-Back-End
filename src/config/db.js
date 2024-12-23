@@ -1,5 +1,7 @@
-/*import { Pool } from 'pg';
+import pkg from 'pg';
 import dotenv from 'dotenv';
+
+const { Pool } = pkg;
 
 dotenv.config();
 
@@ -12,4 +14,4 @@ const pool = new Pool({
 });
 
 export default pool;
-*/
+// The database connection is established using the pg.Pool class from the pg module.
