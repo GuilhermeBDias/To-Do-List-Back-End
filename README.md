@@ -9,8 +9,6 @@ A API permitirá criar, listar, atualizar e excluir tarefas.
 
 -Express
 
--eslint
-
 -nodemon
 
 -PostgreSQL
@@ -20,7 +18,7 @@ A API permitirá criar, listar, atualizar e excluir tarefas.
 1- Clone este repositório
 2- instale as dependências com "npm install"
 3- Configure as variáveis de ambiente para conectar ao banco de dados.
-4- inicie o servidor com "npm dev"
+4- inicie o servidor com "npm run dev"
 
 # Objetivo
 
