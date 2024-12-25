@@ -12,3 +12,9 @@ export const createTask = async (title, description) => {
 
     return createdTask.rows[0];
 };
+
+export const deleteTask = async (id) => {
+    const removedTask = await pool.query('DELETE FROM tasks WHERE id = $1 returning *', [id]);
+    
+    return removedTask.rows[0];
+};

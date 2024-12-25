@@ -1,4 +1,4 @@
-import { getAllTasks, createTask } from '../models/taskModel.js';
+import { getAllTasks, createTask, deleteTask } from '../models/taskModel.js';
 
 export const fetchAllTasks = async (req, res) =>{
     const rows = await getAllTasks();
@@ -13,4 +13,12 @@ export const addTask = async (req, res) =>{
 
     return res.status(201).json(newTask);
 
+};
+
+export const removeTask = async (req, res) =>{
+    const { id } = req.params;
+
+    await deleteTask(id);
+
+    return res.status(204).json()
 };
