@@ -15,6 +15,15 @@ export const createTask = async (title, description) => {
 
 export const deleteTask = async (id) => {
     const removedTask = await pool.query('DELETE FROM tasks WHERE id = $1 returning *', [id]);
-    
+
     return removedTask.rows[0];
+};
+
+export const updateTask = async (id, task) => {
+    const query = 'UPDATE tasks SET title = $1, status = $2 WHERE id = $3 returning *'
+
+    const { title, status } = task;
+
+    const updatedTask = await pool.query(query, [title, status, id]);
+    return updatedTask.rows[0];
 };
