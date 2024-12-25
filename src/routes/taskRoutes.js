@@ -2,7 +2,7 @@ import express from 'express';
 import { validateFieldStatus, validateFieldTitle } from '../middlewares/tasksMiddleware.js';
 import { fetchAllTasks, addTask, removeTask, editTask } from '../controllers/taskcontroller.js';
 
-
+// Routes for tasks
 const routes = (app) =>{
     app.use(express.json());
     app.get('/tasks', fetchAllTasks);

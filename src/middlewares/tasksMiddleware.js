@@ -1,3 +1,6 @@
+// Middlewares for tasks routes
+
+//Middleware to validate the title field
 export const validateFieldTitle = (req, res, next) => {
     const { body } = req;
 
@@ -12,6 +15,7 @@ export const validateFieldTitle = (req, res, next) => {
     next();
 };
 
+//Middleware to validate the status field
 export const validateFieldStatus = (req, res, next) => {
     const { body } = req;
 
