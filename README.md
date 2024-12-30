@@ -19,10 +19,11 @@ A API permitirá criar, listar, atualizar e excluir tarefas.
 
 ## Como Usar
 
-1- Clone este repositório
-2- instale as dependências com "npm install"
-3- Configure as variáveis de ambiente para conectar ao banco de dados.
-4- inicie o servidor com "npm run dev"
+1. Clone este repositório.
+2. instale as dependências com "npm install".
+3. Configure as variáveis de ambiente para conectar ao banco de dados.
+4. inicie o servidor com "npm run dev".
+5. Utilize a ferramenta Postman ou Insomnia para testar a API.
 
 ## Objetivo
 
