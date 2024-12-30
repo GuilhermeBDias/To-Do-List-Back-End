@@ -3,7 +3,7 @@ import pool from '../config/db.js';
 
 // Function to fetch all tasks
 export const getAllTasks = async () => {
-    const { rows } = await pool.query('SELECT * FROM tasks');
+    const { rows } = await pool.query('SELECT * FROM tasks ORDER BY id ASC');
     
     return rows;
 };
